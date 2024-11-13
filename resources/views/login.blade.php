@@ -22,7 +22,7 @@
     
             <nav>
                 <ul>
-                    <li><a href="#" class="button">Explore</a></li>
+                    <li><a href="/welcome" class="button">Explore</a></li>
                     <li><a href="/menu" class="button">Menu</a></li>
                     <li><a href="/help" class="button">Help</a></li>
                     <li><a href="/sign-up" class="button">Sign Up</a></li>
@@ -38,7 +38,7 @@
             <div class="welcome-container">
                 <img src="/assets/images/welcome.jpg" alt="welcome image">
                     <div class="text-container cute-font">
-                        <h2>Join PICKK Recipe!</h2>
+                        <h2>LOGIN</h2>
                         <p>Your Go-To Platform for Tried-and-True Recipes</p>
                         
                     </div>

@@ -23,9 +23,10 @@ header {
 }
 
 .logo img {
-    height: 60px;
+    height: 50px;
 }
 
+/* Navigation styles */
 nav {
     flex: 1;
     display: flex;
@@ -40,12 +41,8 @@ nav ul {
     justify-content: center;
 }
 
-nav ul.center-links {
-    margin-right: auto;
-}
-
 nav ul li {
-    margin: 0 10px;
+    position: relative;
 }
 
 nav ul li .button {
@@ -53,6 +50,17 @@ nav ul li .button {
     padding: 10px 10px;
     text-decoration: none;
     font-size: 1rem;
+    display: inline-block;
+}
+
+/* Underline effect on hover */
+nav ul li:hover .button {
+    border-bottom: 2px solid #ff7979; /* Underline color */
+}
+
+/* Add margin-right to the "Help" item */
+nav ul li:nth-child(3) {
+    margin-right: 150px; /* Adjust the value as needed */
 }
 
 /* Welcome section */
@@ -61,7 +69,6 @@ nav ul li .button {
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin-top: 10px;
 }
 
 .welcome-container {
@@ -94,7 +101,7 @@ nav ul li .button {
 
 .text-container h2 {
     font-size: 2.5rem;
-    color: #ff7979;
+    color: white;
 }
 
 .text-container p {
