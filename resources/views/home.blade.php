@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PICKK's - a recipe sharing platform</title>
+        <title>PICKK's - a filipino recipe sharing platform</title>
 
         <!-- Add Google Font link here -->
         <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
@@ -117,11 +117,87 @@
         </section>
         <!--END OF CELEBRATE PICKK SECTION-->
 
+        <!--SECTION OF DISCOVER PICKK-->
+         <section id="discover-section">
+
+            <div class="image-container">
+                <img src="/assets/images/discover.jpg" alt="Left Image">
+            </div>
+
+            <div class="discover-container">
+                    <div class="discover-text-container">
+                        <h2 style="color: #d13469;">Discover Personalized Filipino Recipes with PICKK Recipe</h2>
+                        <p>PICKK Recipe is cooking up something special! The platform learns your tastes, preferences, and cooking habits, 
+                            offering personalized recipe recommendations. Whether you're craving a classic Filipino dish or something new, 
+                            PICKK Recipe suggests recipes tailored to your flavor profile. From comforting favorites to exciting culinary surprises, 
+                            explore dishes that match your mood and satisfy your cravings. Get started today and discover meals that are perfect for you!</p>  
+                            <a href="/menu" class="button3">GET STARTED</a>      
+                    </div>
+            </div>
+        </section>
+        <!--END SECTION OF DISCOVER PICKK-->
+
+        <!--SECTION OF CREATE RECIPE WITH PICKK-->
+         <section id="discover-section">
+
+            <div class="discover-container">
+                    <div class="discover-text-container">
+                        <h2 style="color: #d13469;">NEW: Share your Created Recipes!</h2>
+                        <p>We know you love creating your own delicious Filipino dishes or modifying recipes to suit your taste. Now, there's even better 
+                            news: You can share your culinary creations with friends and family through your favorite social media platforms! Whether you’ve 
+                            put your unique spin on a classic recipe or made something entirely new, spreading the joy of cooking has never been easier. 
+                            Share your recipes today and inspire others to cook up something special!</p>  
+                            <a href="/sign-up" class="button3">CREATE AND SHARE TODAY</a>      
+                    </div>
+            </div>
+
+            <div class="image-container">
+                <img src="/assets/images/create-recipe.jpg" alt="Left Image">
+            </div>
+
+        </section>
+        <!--END SECTION OF CREATE RECIPE WITH PICKK-->
+
+        <!--SECTION OF DISCOVER PICKK-->
+         <section id="discover-section">
+
+            <div class="image-container">
+                <img src="/assets/images/trending.jpg" alt="Left Image">
+            </div>
+
+            <div class="discover-container">
+                    <div class="discover-text-container">
+                        <h2 style="color: #d13469;">NEW: Discover Trending Filipino Recipes!</h2>
+                        <p>Stay on top of the latest Filipino food trends with PICKK Recipe! Now, you can explore a curated collection of trending recipes, 
+                            from modern twists on traditional dishes to new flavor combinations that everyone is talking about. Whether you’re looking to try 
+                            something new or recreate the hottest dish in Filipino cuisine, you’ll find fresh inspiration to fuel your culinary adventures. 
+                            Don’t miss out on what’s cooking – check out the trending recipes today!</p>  
+                            <a href="/menu" class="button3">CHECK OUT</a>      
+                    </div>
+            </div>
+        </section>
+        <!--END SECTION OF DISCOVER PICKK-->
+
+        <!--EXPLORE PICKK SECTION-->
+        <section id="celebrate-section">
+            <div class="celebrate-container">
+                <img src="/assets/images/explore.jpg" alt="explore image">
+                    <div class="celeb-text-container">
+                        <h2>Explore all our Filipino Recipes</h2>
+                        <p>Discover all PICKK's Recipe has to offer, with over 500+ tested recipes all with innovative Guided Cooking functionality.</p>
+                        <a href="/menu" class="button2">DISCOVER</a>
+                    </div>
+            </div>
+        </section>
+        <!--END OF CELEBRATE PICKK SECTION-->
+
         <!-- FOOTER -->
         <footer>
             <p>&copy;copyright 2024 PICKK Recipe</p>
-            <a href="/terms" class="terms-of-use">Terms of Use</a><br>
-            <a href="/policy" class="policy">Privacy Policy</a>
+            <div class="footer-links">
+                <a href="/terms">Terms of Use</a>
+                <a href="/policy">Privacy Policy</a>
+            </div>
         </footer>
         <!-- END OF FOOTER -->
 

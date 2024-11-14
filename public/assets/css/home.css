@@ -67,6 +67,8 @@ nav ul li:nth-child(3) {
     margin-right: 150px; /* Adjust the value as needed */
 }
 
+/* END of Navigation styles */
+
 /* Welcome section */
 #welcome-section {
     display: flex;
@@ -97,7 +99,7 @@ nav ul li:nth-child(3) {
 
 .button1 {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 10px 24px;
     background-color: #ff6f61; /* A warm, inviting color */
     color: #fff;
     font-size: 16px;
@@ -107,6 +109,7 @@ nav ul li:nth-child(3) {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
 }
 
 .button1:hover {
@@ -136,6 +139,8 @@ nav ul li:nth-child(3) {
     margin-top: 10px;
     color: white;
 }
+
+/* END of Welcome section */
 
 /* About Section*/
 #about-section {
@@ -176,6 +181,7 @@ p {
     border-radius: 10px;
 }
 
+/* END of About Section*/
 
 /* Latest PICKKs Section*/
 #latestPICKK-section {
@@ -276,6 +282,8 @@ p {
     font-size: 1rem;
 }
 
+/* END of Latest PICKKs Section*/
+
 /* Celebration PICKK section */
 #celebrate-section {
     display: flex;
@@ -346,6 +354,63 @@ p {
     color: white;
 }
 
+/* END of Celebration PICKK section */
+
+/* Discover Section*/
+#discover-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 50px;
+    background-color: white;
+}
+
+.discover-container {
+    width: 50%;
+    padding: 20px;
+}
+
+.discover-text-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.discover-text-container h2 {
+    color: #d13469;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.discover-text-container p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.button3 {
+    display: inline-block;
+    padding: 10px 24px;
+    background-color: #ff6f61; /* A warm, inviting color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 12px;
+}
+
+/* Image Styling */
+.image-container img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* END of Discover Section*/
 
 /* Footer styles */
 footer {
@@ -360,11 +425,19 @@ footer p {
     margin: 0;
 }
 
-footer a { 
-    color: #000; 
-    text-decoration: none; 
-} 
+.footer-links {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the links */
+    justify-content: center; /* Optional: To center the links horizontally */
+}
+  
+.footer-links a {
+    text-decoration: none; /* Optional: Removes underline from links */
+    color: inherit; /* Optional: Inherits text color from parent */
+}
 
-footer a:hover { 
+.footer-links a:hover { 
     text-decoration: underline; 
 }
+
+/* END ofFooter styles */
