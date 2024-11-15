@@ -65,7 +65,7 @@ nav ul li:hover .button {
 
 /* Add margin-right to the "Help" item */
 nav ul li:nth-child(3) {
-    margin-right: 150px; /* Adjust the value as needed */
+    margin-right: 400px; /* Adjust the value as needed */
 }
 
 /* END of Navigation styles */
