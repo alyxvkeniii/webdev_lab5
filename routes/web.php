@@ -26,6 +26,9 @@ Route::get('/help', function () {
 
 Route::view('/help', 'help')->name('help');
 
+Route::view('/policy', 'policy')->name('policy');
+Route::view('/terms', 'terms')->name('terms');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); 
 Route::post('/login', [LoginController::class, 'login']); 
 
