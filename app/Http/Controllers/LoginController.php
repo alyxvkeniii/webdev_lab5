@@ -7,13 +7,10 @@ use Illuminate\Support\Facades\Validator;
 
 class LoginController extends Controller
 {
-    // Show the login form
     public function showLoginForm()
     {
         return view('login');
     }
-
-    // Handle the login form submission
     public function login(Request $request)
     {
         $TestInfo = [
@@ -53,23 +50,21 @@ class LoginController extends Controller
         return back()->withErrors(['email' => 'Wrong Email or Password'])->withInput();
     }
 
-    // Show the sign-up form
     public function showSignUpForm()
     {
         return view('sign-up');
     }
 
-    // Handle the sign-up form submission
     public function signUp(Request $request)
     {
         // Validate the incoming data
         $validator = Validator::make($request->all(), [
             'email' => 'required|email|max:255',
-            'password' => 'required|min:10|confirmed',
+            'password' => 'required|min:5|confirmed',
         ]);
 
         if ($validator->fails()) {
-            return redirect()->route('signup')->withErrors($validator)->withInput();
+            return redirect()->route('sign-up')->withErrors($validator)->withInput();
         }
 
         // Redirect to the dashboard after successful sign-up

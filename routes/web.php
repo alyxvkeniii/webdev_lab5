@@ -23,7 +23,8 @@ Route::view('/menu', 'menu')->name('menu');
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); 
 Route::post('/login', [LoginController::class, 'login']); 
 
-Route::get('/sign-up', [LoginController::class, 'showSignUpForm'])->name('sign-up'); 
-Route::post('/sign-up', [LoginController::class, 'sign-Up']); 
+Route::get('/sign-up', [LoginController::class, 'showSignUpForm'])->name('sign-up');
+Route::post('/sign-up', [LoginController::class, 'signUp']); 
+
 
 
