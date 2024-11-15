@@ -50,12 +50,6 @@ Route::get('/settings', function () {
 
 Route::view('/settings', 'settings')->name('settings');
 
-Route::get('/logout', function () {
-    return view('logout');
-});
-
-Route::view('/logout', 'logout')->name('logout');
-
 Route::view('/policy', 'policy')->name('policy');
 Route::view('/terms', 'terms')->name('terms');
 
