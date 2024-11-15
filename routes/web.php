@@ -20,11 +20,11 @@ Route::get('/menu', function () {
 
 Route::view('/menu', 'menu')->name('menu');
 
-Route::get('/help', function () {
-    return view('help');
+Route::get('/faq', function () {
+    return view('faq');
 });
 
-Route::view('/help', 'help')->name('help');
+Route::view('/faq', 'faq')->name('faq');
 
 Route::view('/policy', 'policy')->name('policy');
 Route::view('/terms', 'terms')->name('terms');

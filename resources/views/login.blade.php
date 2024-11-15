@@ -13,13 +13,13 @@
 
             <div class="logo">
                 <a href="/">
-                    <img src="/css/assets/images/logo.png" alt="Logo">
+                    <img src="/assets/images/logo.png" alt="Logo">
                 </a>
             </div>
  
             <nav>
                 <ul>
-                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
+                    <li><a href="{{ route('faq') }}" class="button"><b>FAQ</b></a></li>
                 </ul>
             </nav>
 
@@ -64,7 +64,7 @@
 
     <!-- FOOTER -->
         <footer>
-            <p>&copy;copyright 2024 PICKK Recipe</p>
+            <p>&copy;2024 PICKK Recipe</p>
             <div class="footer-links">
                 <a href="/terms">Terms of Use</a>
                 <a href="/policy">Privacy Policy</a>

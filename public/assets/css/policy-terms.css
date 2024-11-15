@@ -1,3 +1,11 @@
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    justify-content: center;
+    width: 100%;
+}
+
 #privacy-policy-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -57,11 +65,16 @@
     color: #333; 
 }
 
-#terms-of-use-section h1, 
+#terms-of-use-section h1 {
+    font-size: 24px;
+    color: #d13469;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
 #terms-of-use-section h2 {
     font-size: 24px;
     color: #d13469;
-    margin-bottom: 20px;
     font-weight: bold;
 }
 

@@ -3,13 +3,20 @@
 @section('title', 'FAQ - Frequently Asked Questions')
 
 @section('additional-styles')
-    <link rel="stylesheet" href="/assets/css/help.css">
+    <link rel="stylesheet" href="/assets/css/faq.css">
 @endsection
 
 @section('content')
+    <div class="wrapper">
+    
+    <section id="header-text">
+        <div class="header-faq-text">
+            <h1>Frequently Asked Questions</h1>
+            <p>Below you’ll find the answers to the frequently asked questions about PICKK Recipe Site.</p>
+        </div>
+    </section>
+
     <section id="faq-section">
-        <h1>---</h1>
-        <h2>Frequently Asked Questions</h2>
 
         <div class="faq-container">
             <div class="faq-item">
@@ -71,10 +78,11 @@
             <div class="faq-item">
             <button class="faq-question">Is there a mobile app for PICKK?</button>
             <div class="faq-answer">
-                <p>Currently, PICKK is only available as a website. There are no plans to develop a mobile app for PICKK in the future.
+                <p>Currently, PICKK is only available as a website. There are no plans to develop a mobile app for PICKK in the future.</p>
             </div>
         </div>
     </section>
+    </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {

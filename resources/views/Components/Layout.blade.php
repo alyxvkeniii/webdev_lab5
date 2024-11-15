@@ -18,14 +18,14 @@
         <header>
 
             <div class="logo">
-                <img src="/css/assets/images/logo.png" alt="Logo">
+                <img src="/assets/images/logo.png" alt="Logo">
             </div>
     
             <nav>
                 <ul>
                     <li><a href="{{ route('home') }}" class="button"><b>Explore</b></a></li>
                     <li><a href="{{ route('menu') }}" class="button"><b>Menu</b></a></li>
-                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
+                    <li><a href="{{ route('faq') }}" class="button"><b>FAQ</b></a></li>
                     <li><a href="{{ route('sign-up') }}" class="button"><b>Sign Up</b></a></li>
                     <li><a href="{{ route('login') }}" class="button"><b>Login</b></a></li>
                     <li><a href="{{ route('menu') }}" class="button"><b>&#128269;</b></a></li>
@@ -44,7 +44,7 @@
 
         <!-- FOOTER -->
         <footer>
-            <p>&copy;copyright 2024 PICKK Recipe</p>
+            <p>&copy;2024 PICKK Recipe</p>
             <div class="footer-links">
                 <a href="/terms">Terms of Use</a>
                 <a href="/policy">Privacy Policy</a>

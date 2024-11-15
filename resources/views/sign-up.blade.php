@@ -14,13 +14,13 @@
 
             <div class="logo">
                 <a href="/">
-                    <img src="/css/assets/images/logo.png" alt="Logo">
+                    <img src="/assets/images/logo.png" alt="Logo">
                 </a>
             </div>
  
             <nav>
                 <ul>
-                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
+                    <li><a href="{{ route('faq') }}" class="button"><b>FAQ</b></a></li>
                 </ul>
             </nav>
 

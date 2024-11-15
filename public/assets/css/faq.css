@@ -1,0 +1,141 @@
+body {
+    font-family: 'Baloo 2', cursive;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#header-text {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.header-faq-text h1 {
+    font-size: 2.5em;
+    color: #ff7979; 
+    margin-bottom: 10px;
+}
+
+.header-faq-text p {
+    font-size: 1.1em;
+    color: #777; /* Light gray color for the subtitle */
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#header-text::before,
+#header-text::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    opacity: 0.5;
+}
+
+#header-text::before {
+    width: 300px;
+    height: 300px;
+    top: 30px;
+    left: 20%;
+}
+
+#header-text::after {
+    width: 200px;
+    height: 200px;
+    top: 80px;
+    right: 20%;
+}
+
+
+/* FAQ Section Styles */
+#faq-section {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#faq-section h2 {
+    font-size: 2rem;
+    color: #ff7979; /* Soft green color for the title */
+    margin-bottom: 1rem;
+}
+
+#faq-section p {
+    color: #555;
+    font-size: 1rem;
+}
+
+/* FAQ Container */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin: 1rem 0;
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.faq-item.active {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    width: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 1rem;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ff7979;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+    outline: none;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #ff7979;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1rem;
+    background-color: #f9f9f9;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer p {
+    margin: 1rem 0;
+    color: #555;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px; /* Adjust based on the content */
+    padding: 1rem;
+}
+
+.faq-answer.active {
+    display: block;
+}
