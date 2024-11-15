@@ -26,17 +26,24 @@
 
         </header>
     <!-- END OF HEADER -->
+    
+    <div class="main-wrapper">
+
+    <div class="header-text">
+        <h1>JOIN PICKK THE OFFICIAL RECIPE PLATFORM</h1>
+        <p>Sign up for free to explore a world of tried-and-true recipes</p>
+    </div>
 
     <div class="container">
+         <!-- Sign Up Form -->
         <h2>Sign Up for PICKK Recipes</h2>
 
-        <!-- Sign Up Form -->
         <form method="POST" action="{{ route('sign-up') }}">
             @csrf
 
             <!-- Email Input -->
             <div class="form-group">
-                <label for="email">Email Address</label>
+                <label for="email">Your Email Address</label>
                 <input type="email" id="email" name="email" value="{{ old('email') }}" required>
                 @error('email')
                     <div class="error">{{ $message }}</div>
@@ -45,7 +52,7 @@
 
             <!-- Password Input -->
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password">Create a Password</label>
                 <input type="password" id="password" name="password" required>
                 @error('password')
                     <div class="error">{{ $message }}</div>
@@ -58,20 +65,21 @@
                 <input type="password" id="password_confirmation" name="password_confirmation" required>
             </div>
 
+            <!-- Checkbox Aggreement -->
+                <div class="aggreement">
+                    <label>
+                        <input type="checkbox" id="accept" name="accept">
+                        I have read and I accept the 
+                        <a href="/terms" target="_blank">Terms and Conditions</a> and 
+                        <a href="/privacy" target="_blank">Privacy Policy</a>.
+                    </label>
+                </div>
+            <label>
+
             <!-- Submit Button -->
             <button type="submit" class="btn">Sign Up</button>
         </form>
     </div>
-
-    <!-- FOOTER -->
-    <footer>
-            <p>&copy;copyright 2024 PICKK Recipe</p>
-            <div class="footer-links">
-                <a href="/terms">Terms of Use</a>
-                <a href="/policy">Privacy Policy</a>
-            </div>
-        </footer>
-    <!-- END OF FOOTER -->
-
+    </div>
 </body>
 </html>

@@ -11,8 +11,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
+    background-image: url('/assets/images/sign-up1.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 /* Header styles */
@@ -77,6 +81,15 @@ nav ul li:hover .button {
 
 /* END of Navigation styles */
 
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
 .container {
     background-color: white;
     border-radius: 8px;
@@ -84,21 +97,36 @@ nav ul li:hover .button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
-    height: 450px;
+    height: 490px;
     text-align: center;
+}
+
+/* Centered Header Text styling */
+.header-text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 40px;
+    margin-top: 70px;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    padding-top: 30px;
+}
+
+.header-text p {
+    font-size: 20px;
+    color: white;
 }
 
 h2 {
     font-size: 24px;
     color: #333;
-    text-align: left;
-}
-
-p{
+    text-align: center;
     margin-bottom: 20px;
-    font-size: 17px;
-    color: #333;
-    text-align: left;
 }
 
 .form-group {
@@ -159,38 +187,16 @@ button:focus {
     padding: 10px;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    color: black;
-    font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0;
-    text-align: center;
-}
-
-.footer-links {
-    display: flex;
-    gap: 10px; /* Adjust the gap between the links */
-    justify-content: center; /* Centers the links horizontally */
-    margin-top: 10px;
-}
-
-.footer-links a {
-    text-decoration: none; /* Removes underline from links */
-    color: inherit; /* Inherits text color from parent */
-}
-
-.footer-links a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
-/* END of Footer styles */
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .aggreement a {
+    color: #ff7979;
+    text-decoration: none;
+  }
+  
+  .aggreement a:hover {
+    text-decoration: underline;
+  }
