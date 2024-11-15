@@ -26,15 +26,6 @@ Route::get('/faq', function () {
 
 Route::view('/faq', 'faq')->name('faq');
 
-Route::get('/help', function () {
-    return view('help');
-});
-
-Route::view('/help', 'help')->name('help');
-
-Route::get('/profile', function () {
-    return view('profile');
-});
 
 Route::view('/profile', 'profile')->name('profile');
 
