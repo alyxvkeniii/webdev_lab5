@@ -26,6 +26,36 @@ Route::get('/faq', function () {
 
 Route::view('/faq', 'faq')->name('faq');
 
+Route::get('/help', function () {
+    return view('help');
+});
+
+Route::view('/help', 'help')->name('help');
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::view('/profile', 'profile')->name('profile');
+
+Route::get('/recipe', function () {
+    return view('recipe');
+});
+
+Route::view('/recipe', 'recipe')->name('recipe');
+
+Route::get('/settings', function () {
+    return view('settings');
+});
+
+Route::view('/settings', 'settings')->name('settings');
+
+Route::get('/logout', function () {
+    return view('logout');
+});
+
+Route::view('/logout', 'logout')->name('logout');
+
 Route::view('/policy', 'policy')->name('policy');
 Route::view('/terms', 'terms')->name('terms');
 
