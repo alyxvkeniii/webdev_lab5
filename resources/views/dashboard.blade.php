@@ -29,7 +29,7 @@
                             <div class="dropdown-content">
                                 <a href="{{ route('profile') }}">Profile</a>
                                 <a href="{{ route('settings') }}">Settings</a>
-                                <a href="{{ route('logout') }}">Logout</a>
+                                <a href="{{ route('home') }}">Logout</a>
                             </div>
                     </li>
                 </ul>
