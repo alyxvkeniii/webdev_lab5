@@ -20,6 +20,12 @@ Route::get('/menu', function () {
 
 Route::view('/menu', 'menu')->name('menu');
 
+Route::get('/help', function () {
+    return view('help');
+});
+
+Route::view('/help', 'help')->name('help');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); 
 Route::post('/login', [LoginController::class, 'login']); 
 

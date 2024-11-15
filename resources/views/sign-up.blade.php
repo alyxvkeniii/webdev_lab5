@@ -9,6 +9,24 @@
 </head>
 <body>
 
+    <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+                <a href="/">
+                    <img src="/css/assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+ 
+            <nav>
+                <ul>
+                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- END OF HEADER -->
+
     <div class="container">
         <h2>Sign Up for PICKK Recipes</h2>
 
@@ -44,6 +62,16 @@
             <button type="submit" class="btn">Sign Up</button>
         </form>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+            <p>&copy;copyright 2024 PICKK Recipe</p>
+            <div class="footer-links">
+                <a href="/terms">Terms of Use</a>
+                <a href="/policy">Privacy Policy</a>
+            </div>
+        </footer>
+    <!-- END OF FOOTER -->
 
 </body>
 </html>

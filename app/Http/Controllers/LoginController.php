@@ -42,7 +42,7 @@ class LoginController extends Controller
         foreach ($TestInfo as $user) {
             if ($request->email === $user['email'] && $request->password === $user['password']) {
                 // Successful login
-                return redirect()->intended('/');
+                return redirect()->intended('/dashboard');
             }
         }
 

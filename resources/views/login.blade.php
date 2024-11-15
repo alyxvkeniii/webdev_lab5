@@ -1,5 +1,3 @@
-<!-- resources/views/login.blade.php -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,8 +8,27 @@
 </head>
 <body>
 
+    <!-- HEADER -->
+        <header>
+
+            <div class="logo">
+                <a href="/">
+                    <img src="/css/assets/images/logo.png" alt="Logo">
+                </a>
+            </div>
+ 
+            <nav>
+                <ul>
+                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
+                </ul>
+            </nav>
+
+        </header>
+    <!-- END OF HEADER -->
+
     <div class="container">
-        <h2>Login to PICKK Recipes</h2>
+        <h2>Log in</h2>
+        <p>Please enter email address and password.</p>
 
         <!-- Login Form -->
         <form method="POST" action="{{ route('login') }}">
@@ -20,7 +37,7 @@
             <!-- Email Input -->
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" value="{{ old('email') }}" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email (Example: hello@gmail.com)" value="{{ old('email') }}" required>
                 @error('email')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -37,8 +54,22 @@
 
             <!-- Submit Button -->
             <button type="submit" class="btn">Login</button>
+            <div class="dont">
+                <p>Don't have an account? <a href="{{ route('sign-up') }}" class="button"><b>Sign Up</b></a></p>
+            </div>
+
         </form>
+        <!-- END of Login Form -->
     </div>
 
+    <!-- FOOTER -->
+        <footer>
+            <p>&copy;copyright 2024 PICKK Recipe</p>
+            <div class="footer-links">
+                <a href="/terms">Terms of Use</a>
+                <a href="/policy">Privacy Policy</a>
+            </div>
+        </footer>
+    <!-- END OF FOOTER -->
 </body>
 </html>

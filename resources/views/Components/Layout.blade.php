@@ -25,7 +25,7 @@
                 <ul>
                     <li><a href="{{ route('home') }}" class="button"><b>Explore</b></a></li>
                     <li><a href="{{ route('menu') }}" class="button"><b>Menu</b></a></li>
-                    <li><a href="{{ route('dashboard') }}" class="button"><b>Dashboard</b></a></li>
+                    <li><a href="{{ route('help') }}" class="button"><b>Help</b></a></li>
                     <li><a href="{{ route('sign-up') }}" class="button"><b>Sign Up</b></a></li>
                     <li><a href="{{ route('login') }}" class="button"><b>Login</b></a></li>
                 </ul>
