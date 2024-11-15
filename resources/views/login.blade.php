@@ -37,7 +37,7 @@
             <!-- Email Input -->
             <div class="form-group">
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email (Example: hello@gmail.com)" value="{{ old('email') }}" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email (Example: Hello@gmail.com)" value="{{ old('email') }}" required>
                 @error('email')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -46,7 +46,7 @@
             <!-- Password Input -->
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" placeholder="(Example: password)" name="password" required>
                 @error('password')
                     <div class="error">{{ $message }}</div>
                 @enderror
