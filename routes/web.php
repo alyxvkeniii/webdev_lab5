@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LoginController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -19,16 +20,10 @@ Route::get('/menu', function () {
 
 Route::view('/menu', 'menu')->name('menu');
 
-Route::get('/sign-up', function () {
-    return view('sign-up');
-});
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login'); 
+Route::post('/login', [LoginController::class, 'login']); 
 
-Route::view('/sign-up', 'sign-up')->name('sign-up');
-
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::view('/login', 'login')->name('login');
+Route::get('/sign-up', [LoginController::class, 'showSignUpForm'])->name('sign-up'); 
+Route::post('/sign-up', [LoginController::class, 'signUp']); 
 
 
